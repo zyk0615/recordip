@@ -1,0 +1,55 @@
+{
+  "name": "zykutil/record-ip",
+  "description": "To record IP info by customize type to DB.",
+  "keywords": [
+    "laravel",
+    "ip",
+    "record"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ZYKUtil\\RecordIp\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "YoKai",
+      "email": "yokaiz0615@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0.2",
+    "illuminate/database": "^9.43",
+    "illuminate/support": "^9.0",
+    "jenssegers/agent": "^2.6"
+  },
+  "require-dev": {
+    "illuminate/console": "^9.0",
+    "illuminate/log": "^9.0",
+    "mockery/mockery": "^1.4.4",
+    "phpunit/phpunit": "^9.5.10"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "ZYKUtil\\RecordIp\\RecordIpServiceProvider"
+      ],
+      "aliases": {
+        "UniSn": "ZYKUtil\\RecordIp\\RecordIpFacade"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
